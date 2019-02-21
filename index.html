@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body id="body">
+	<div class="main1">
+<div id="sub1">
+	<h1>Resume Building</h1>
+</div>
+<div id="sub2">
+	<a href="form.html">Add Profile</a><img src="images.jpg" alt="no profile" width="30%" and height="30%" >
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	var indexedDB=window.indexedDB||window.mozIndexedDB||window.msIndexedDB||
+	window.webkitIndexedDB;
+	var store;
+	var open;
+	var tx;
+	var result;
+
+	var request = indexedDB.open("database",1);
+	request.onupgradeneeded = function(e){
+		open = e.target.result;
+		store = open.createObjectStore("resumedata",{keyPath:"name"});
+
+	}
+	request.onerror = function(e){
+		console.log("error"+e);
+
+	}
+	request.onsuccess=function(e){
+         open = e.target.result;
+         tx =open.transaction("resumedata",'readwrite');
+        store = tx.objectStore("resumedata");
+        var info=store.getAll();
+        info.onsuccess=function(data){
+        	console.log(data);
+        	display(data.target.result);
+
+        }
+}
+var body=document.querySelector("#body");
+function display(d){
+	for(i=0;i<d.length;i++){
+		var head=document.createElement("h2");
+		head.textContent=d[i].name;
+		// body.append(head);
+		var ach=document.createElement("a");
+		ach.classList.add("profile");
+		ach.setAttribute("href","resume.html?"+d[i].name);
+		ach.append(head);
+		body.append(ach);
+		console.log(d[i].name);
+	}
+}
+</script>

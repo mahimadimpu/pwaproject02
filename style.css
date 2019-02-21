@@ -1,0 +1,196 @@
+body{
+	background:#BDC3C7;
+	text-align: center;  
+	}
+	.main{
+		background:#DAF7A6;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 2%; 
+		justify-content: center;
+		border-radius: 4%;
+	}
+	.sub{
+		width: 90%;
+		background:#F1948A;
+		margin: 5%;
+		text-align: center;
+		border-radius: 4%;
+		padding: 1%;
+	}
+	.sub1{
+		width:35%;
+		height:40%;
+		background:#F1948A;
+		margin:5%;
+		text-align: center;
+		border-radius: 5%;
+
+	}
+	select,input{
+		width:98%; 
+		margin:1%;
+	}
+	/*index page stylings*/
+	body{
+		background-color:#BDC3C7;
+		text-align: center;
+	}
+
+	.profie{
+		color: red;
+	}
+	.main1{
+		background-color:grey;
+		border-radius: 5%;
+		margin:3%;
+		width:90%;
+		height:30%;
+		padding:1%;
+		text-align: center; 
+	}
+
+#sub1{
+	background-color:yellow;
+	height:5%;
+	width:90%;
+	margin: 3%;
+	padding: 2%;
+    text-align: center;
+}
+#sub2{
+	text-align: center;
+	background-color: yellow;
+	height: 50%;
+	width:90%;
+	margin: 3%;
+
+}
+@media screen and (min-width:0px) and (max-width:480px){
+	 /*mobile view index page*/
+	body{
+		background-color:pink;
+		text-align: center;
+	}
+	.main1{
+		background-color:green;
+		border-radius: 5%;
+		margin:3%;
+		width:90%;
+		height:30%;
+		padding:1%;
+		text-align: center; 
+	}
+
+#sub1{
+	background-color:aqua;
+	height:5%;
+	width:90%;
+	margin: 3%;
+	padding: 2%;
+    text-align: center;
+}
+#sub2{
+	text-align: center;
+	background-color: yellow;
+	height: 50%;
+	width:90%;
+	margin: 3%;
+}
+}
+@media screen and (min-width:480px) and (max-width:1024px){
+	 /*mobile view index page*/
+	body{
+		background-color:darkgreen;
+		text-align: center;
+	}
+	.main1{
+		background-color:pink;
+		border-radius: 5%;
+		margin:3%;
+		width:90%;
+		height:30%;
+		adding:1%;
+		text-align: center; 
+	}
+
+#sub1{
+	background-color:aqua;
+	height:5%;
+	width:90%;
+	margin: 3%;
+	padding: 2%;
+	 text-align: center;
+}
+#sub2{
+	text-align: center;
+	background-color: yellow;
+	height: 50%;
+	width:90%;
+	margin: 3%;
+}
+}
+@media screen and (min-width:0px) and (max-width:480px){
+	 /*mobile view for resume page*/
+	 body{
+	background:#BDC3C7;
+	text-align: center;  
+	}
+	.main{
+		background:pink;
+		display: inline-block;
+		margin: 2%; 
+		justify-content: center;
+		border-radius: 4%;
+	}
+	.sub{
+		width: 90%;
+		background:lightgreen;
+		margin: 5%;
+		text-align: center;
+		border-radius: 4%;
+		padding: 1%;
+	}
+.sub1{
+		width:65%;
+		height:40%;
+		background:aqua;
+		margin:5%;
+		text-align: center;
+		border-radius: 5%;
+
+	}
+		}
+
+		@media screen and (min-width:480px) and (max-width:1024px){
+	 /*mobile view for resume page*/
+	 body{
+	background:orange;
+	text-align: center;  
+	}
+	.main{
+		background:aqua;
+		display: inline-block;
+		margin: 2%; 
+		justify-content: center;
+		border-radius: 4%;
+	}
+	.sub{
+		width: 90%;
+		background:pink;
+		margin: 5%;
+		text-align: center;
+		border-radius: 4%;
+		padding: 1%;
+	}
+.sub1{
+		width:65%;
+		height:40%;
+		background:darkgreen;
+		margin:5%;
+		text-align: center;
+		border-radius: 5%;
+
+	}
+		}
